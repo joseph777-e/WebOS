@@ -1,9 +1,32 @@
 <!DOCTYPE html>
 <head>  
 
-    <body style = "background-color: #000000; background-image: url(./hey.gif);">  
-      <div style =" border: 4mm ridge rgb(211 220 50 / 0.6); width: 80%; margin: auto; padding: 20px; background-color: #83c772; border-radius: 16px;"> 
-        <h1 style = "font-style: italic;"">Welcome to my own website.. </h1>
+    <body style = "background-color: #fdfdfd; background-image: url(./hey.gif);">  
+
+       <div id="welcome"   style="border: solid; display: flex; flex-direction: column; border-radius: 10px; position: absolute; top: calc(10%); left: calc(80%); background-color: rgba(151, 196, 100, 0.747); ">
+          
+       </div>
+       <div id="welcome"   style="border: solid; display: flex; flex-direction: column; border-radius: 100px; position: absolute; top: calc(10%); left: calc(85%); background-color: rgba(151, 196, 100, 0.747); ">
+          <div id="welcomeheader" style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
+             
+             <p style="cursor: pointer" id="welcomeclose">Close</p>
+          </div>
+          <div id="welcomeheader" style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
+             <p style="margin: 0px; color: #000000; font-weight: 500">DRAG</p>
+           
+             
+         </div>
+          <div id="welcomeheader" style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
+             <p style="cursor: pointer" id="welcomeopen">Open</p>
+          </div>
+       </div>
+       
+
+      
+      
+      <div  style =" border: 4mm ridge rgb(211 220 50 / 0.6); width: 80%; margin: auto; padding: 20px; background-color: #83c772; border-radius: 16px;"> 
+        
+        <h1  style = "font-style: italic;"">Welcome to my own website.. </h1>
         <p>Here we will talk about me and my passions.</p>
         <h2>About Me</h2>
         <p>My name is joseph muhizi and i am a student. Am 16 years old and will get 17 in october 8th. I leave in <strong><a href="https://en.wikipedia.org/wiki/Burundi">Burundi</a></strong>(a country in East Africa).</p>
@@ -13,10 +36,30 @@
         <p>Here is a small picture of her enjoying herself😊:</p>
         <img src="mycat.jpg" alt="My Cat" width="500" height="500">
         <p>Thank you for visiting my website! I hope you enjoyed learning a little bit about me and my passions.</p>
+      
       </div>
+      
+      
+      
+      <div style="position: absolute; width: 100%; display: flex; color: #0e0d0d; justify-content: space-between; gap: 32px; background-image: radial-gradient(rgb(124, 9, 139),rgb(12, 12, 12)) ; border-radius: 16px;">
         
-    
-    
+        <p style="margin-left: 16px; font-weight: 700; background-color: burlywood; padding: 4px 12px; border-radius: 16px;">
+          Joseph's webOS
+        </p>
+        <p style="background-color: orangered; padding: 4px 12px; border-radius: 16px;">
+          🔥Bankai: Zanka no Tachi🔥
+        </p>
+        <p id="timeElement" style="margin-right: 16px; background-color: rgb(177, 226, 43); padding: 4px 12px; border-radius: 16px;">
+          Time 
+        </p>
+      
+      
+      </div>
+      
+      
+      
+      <script> src = "script.js" </script>
+      <link rel="stylesheet" type="text/css" href="style.css" />
     </body>
 
 </head>
