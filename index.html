@@ -1,65 +1,126 @@
 <!DOCTYPE html>
-<head>  
+<html>
 
-    <body style = "background-color: #fdfdfd; background-image: url(./hey.gif);">  
-
-       <div id="welcome"   style="border: solid; display: flex; flex-direction: column; border-radius: 10px; position: absolute; top: calc(10%); left: calc(80%); background-color: rgba(151, 196, 100, 0.747); ">
-          
-       </div>
-       <div id="welcome"   style="border: solid; display: flex; flex-direction: column; border-radius: 100px; position: absolute; top: calc(10%); left: calc(85%); background-color: rgba(151, 196, 100, 0.747); ">
-          <div id="welcomeheader" style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
-             
-             <p style="cursor: pointer" id="welcomeclose">Close</p>
-          </div>
-          <div id="welcomeheader" style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
-             <p style="margin: 0px; color: #000000; font-weight: 500">DRAG</p>
-           
-             
-         </div>
-          <div id="welcomeheader" style="width: 100%; display: flex; align-items: center; cursor: move; justify-content: center; margin-top: 8px;">
-             <p style="cursor: pointer" id="welcomeopen">Open</p>
-          </div>
-       </div>
-       
-
-      
-      
-      <div  style =" border: 4mm ridge rgb(211 220 50 / 0.6); width: 80%; margin: auto; padding: 20px; background-color: #83c772; border-radius: 16px;"> 
-        
-        <h1  style = "font-style: italic;"">Welcome to my own website.. </h1>
-        <p>Here we will talk about me and my passions.</p>
-        <h2>About Me</h2>
-        <p>My name is joseph muhizi and i am a student. Am 16 years old and will get 17 in october 8th. I leave in <strong><a href="https://en.wikipedia.org/wiki/Burundi">Burundi</a></strong>(a country in East Africa).</p>
-        <h2>My Passions</h2>
-        <p>I enjoy drawing and playing video games. I also like to code and read manga. My favorite manga is <strong><a href="https://en.wikipedia.org/wiki/Bleach_(TV_series)">Bleach</a></strong> and my favorite video game is <strong><a href="https://www.roblox.com/home">Roblox</a></strong>.</p>
-        <p>I also enjoy playing with my cat alot. She is so friendly and adorrable :)</p>
-        <p>Here is a small picture of her enjoying herself😊:</p>
-        <img src="mycat.jpg" alt="My Cat" width="500" height="500">
-        <p>Thank you for visiting my website! I hope you enjoyed learning a little bit about me and my passions.</p>
-      
-      </div>
-      
-      
-      
-      <div style="position: absolute; width: 100%; display: flex; color: #0e0d0d; justify-content: space-between; gap: 32px; background-image: radial-gradient(rgb(124, 9, 139),rgb(12, 12, 12)) ; border-radius: 16px;">
-        
-        <p style="margin-left: 16px; font-weight: 700; background-color: burlywood; padding: 4px 12px; border-radius: 16px;">
-          Joseph's webOS
-        </p>
-        <p style="background-color: orangered; padding: 4px 12px; border-radius: 16px;">
-          🔥Bankai: Zanka no Tachi🔥
-        </p>
-        <p id="timeElement" style="margin-right: 16px; background-color: rgb(177, 226, 43); padding: 4px 12px; border-radius: 16px;">
-          Time 
-        </p>
-      
-      
-      </div>
-      
-      
-      
-      <script> src = "script.js" </script>
-      <link rel="stylesheet" type="text/css" href="style.css" />
-    </body>
-
+<head>
+    <title>Joseph's webOS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<body>
+
+    <div id="welcome" class="window">
+
+    <div id="welcomeheader" class="windowheader">
+            <p>DRAG ME</p>
+    </div>
+        <div id="desktopApps">
+
+            <div id="CatIcon" class="desktopIcon" style = "color : rgb(0, 0, 0)">
+
+             <img src="oip2.jpeg">
+
+             <p>About cat</p>
+
+            </div>
+
+
+         </div>
+         <div id="CatNotes" class="window">
+
+          <div id="CatNotesheader" class="windowheader">
+
+            <p>Cat Notes</p>
+           <div id="closebutton">
+            <p id="CatNotesclose" class="button">
+                ❌
+            </p>
+          </div>
+
+         </div>
+
+         <div class="notesBody">
+
+            <button onclick="favFood()">
+                her fav food
+            </button>
+
+            <button onclick="herName()">
+                her name
+            </button>
+
+            <button onclick="herPerso()">
+                her personality
+            </button>
+
+            <hr>
+
+            <div id="notesContent">
+                slect what u want to know...
+            </div>
+
+        </div>
+
+    </div>
+    
+
+        <p id="welcomeclose" class="button">
+            Close
+        </p>
+
+    </div>
+
+    
+    
+<div id="mainContent">
+
+        <h1><i>Welcome to my own website..</i></h1>
+
+        <p>Here we will talk about me and my passions.</p>
+
+        <h2>About Me</h2>
+
+        <p>My name is Joseph Muhizi and I am a student. I am a christian and am 16 years old and will turn 17 on October 8th. I live in <strong>Burundi</strong>.</p>
+
+        <h2>My Passions</h2>
+
+        <p>
+            I enjoy drawing and playing video games.
+            I also like coding and reading manga.
+        </p>
+
+        <p>
+            My favorite manga is Bleach and my favorite game is Roblox.
+            
+        </p>
+
+        <p>
+            I also enjoy playing with my cat a lot.
+            Here is a picture of her enjoying herself. ☺
+        </p>
+
+        <img src="mycat.jpg" width="500">
+
+    </div>
+
+    
+    <div id="taskbar">
+
+        <p>Joseph's webOS</p>
+
+        <p>Hello there!!</p>
+
+        <p id="openWelcomeButton" class = "button">
+            Open Window
+        </p>
+
+        <p id="timeElement">
+            Time
+        </p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
